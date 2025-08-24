@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Better Prompts FREE - AI Prompt Enhancer | No Sign Up Required</title>
+    <meta name="description" content="FREE AI prompt enhancer tool that transforms basic prompts into comprehensive instructions for ChatGPT, Claude, Gemini, and 50+ LLMs. Improve AI response quality by up to 73% with structured prompt engineering - no signup required.">
+    <meta name="keywords" content="ai prompt enhancer, free prompt generator, chatgpt prompt optimization, prompt engineering tool, better ai prompts, claude prompts, gemini prompts, free prompt engineering">
+    <meta property="og:title" content="Make Better Prompts FREE - AI Prompt Enhancement Tool">
+    <meta property="og:description" content="Transform any AI prompt into comprehensive instructions that improve response quality by up to 73%. Free prompt engineering tool for ChatGPT, Claude, Gemini, and 50+ LLMs.">
+    <meta property="og:url" content="https://makebetterpromptsfree.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://makebetterpromptsfree.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Make Better Prompts FREE - AI Prompt Enhancement Tool">
+    <meta name="twitter:description" content="Free tool that transforms basic AI prompts into comprehensive instructions. No signup required.">
+    <meta name="twitter:image" content="https://makebetterpromptsfree.com/og-image.jpg">
+    <link rel="canonical" href="https://makebetterpromptsfree.com">
+    
+    <!-- Schema Markup for SEO and AEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Make Better Prompts FREE",
+      "alternateName": "MakeBetterPromptsFree",
+      "description": "Free AI prompt enhancement tool that transforms basic prompts into comprehensive instructions for ChatGPT, Claude, Gemini, and 50+ language models",
+      "url": "https://makebetterpromptsfree.com",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "100% free prompt enhancement tool with no signup required"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "MakeBetterPromptsFree",
+        "url": "https://makebetterpromptsfree.com",
+        "sameAs": [
+          "https://github.com/makebetterpromptsfree"
+        ]
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-12-19",
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      "keywords": "AI prompt engineering, ChatGPT prompts, Claude prompts, Gemini prompts, free prompt tool",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "AI users, content creators, developers, researchers"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MakeBetterPromptsFree",
+      "url": "https://makebetterpromptsfree.com",
+      "logo": "https://makebetterpromptsfree.com/logo.png",
+      "description": "Leading provider of free AI prompt enhancement tools and prompt engineering resources",
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://github.com/makebetterpromptsfree"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://makebetterpromptsfree.com"
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #22d3ee;
+            --dark: #0f172a;
+            --dark-lighter: #1e293b;
+            --dark-card: #1a1f36;
+            --text: #e2e8f0;
+            --text-dim: #94a3b8;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --border: #334155;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Background Animation */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.03;
+            background: 
+                radial-gradient(circle at 20% 50%, var(--primary) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--accent) 0%, transparent 50%);
+            animation: backgroundShift 20s ease-in-out infinite;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            33% { transform: scale(1.1) rotate(120deg); }
+            66% { transform: scale(0.9) rotate(240deg); }
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo::before {
+            content: "⚡";
+            font-size: 2rem;
+            -webkit-text-fill-color: var(--secondary);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-btn {
+            padding: 0.7rem 1.5rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-dim);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Feature Pills */
+        .features {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        /* Pro Mode Toggle */
+        .mode-toggle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem 0;
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--dark-card);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            padding: 0.5rem;
+            gap: 0.5rem;
+            position: relative;
+        }
+
+        .mode-btn {
+            padding: 0.8rem 2rem;
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mode-btn.active {
+            color: white;
+            background: var(--gradient-1);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .mode-btn:not(.active):hover {
+            color: var(--text);
+        }
+
+        .mode-icon {
+            font-size: 1.2rem;
+        }
+
+        .mode-description {
+            margin-top: 1rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        /* Pattern Detection Badge */
+        .pattern-badge {
+            display: none;
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: var(--gradient-1);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+            z-index: 100;
+            animation: slideInRight 0.5s ease;
+        }
+
+        .pattern-badge.active {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .pattern-badge-icon {
+            font-size: 1.5rem;
+        }
+
+        .pattern-badge-text {
+            font-weight: 600;
+        }
+
+        .pattern-apply-btn {
+            padding: 0.5rem 1rem;
+            background: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .pattern-apply-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Smart Fill Container */
+        .smart-fill-container {
+            display: none;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .smart-fill-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #ff8c42 0%, #ff6361 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+        }
+
+        .smart-fill-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 140, 66, 0.4);
+        }
+
+        .smart-fill-icon {
+            font-size: 1.3rem;
+        }
+
+        .ai-label {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Suggestions Sidebar */
+        .suggestions-sidebar {
+            position: fixed;
+            right: -400px;
+            top: 150px;
+            width: 350px;
+            max-height: 70vh;
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+            transition: right 0.4s ease;
+            z-index: 999;
+            overflow-y: auto;
+        }
+
+        .suggestions-sidebar.active {
+            right: 20px;
+        }
+
+        .suggestions-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .suggestions-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .suggestions-close {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.3rem;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .suggestions-close:hover {
+            background: rgba(244, 63, 94, 0.1);
+            color: var(--accent);
+            transform: rotate(90deg);
+        }
+
+        .suggestion-card {
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .suggestion-card:hover:not(.applied) {
+            border-color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        .suggestion-card.applied {
+            background: rgba(16, 185, 129, 0.05);
+            border-color: var(--success);
+        }
+
+        .suggestion-card.applied::after {
+            content: "✓";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--success);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .suggestion-type {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .suggestion-content {
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+
+        .suggestions-reset {
+            width: 100%;
+            padding: 0.6rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .suggestions-reset:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Enhanced animation for field filling */
+        @keyframes fieldGlow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 140, 66, 0.7); }
+            50% { box-shadow: 0 0 10px 5px rgba(255, 140, 66, 0.3); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 140, 66, 0); }
+        }
+
+        .feature-pill {
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--primary);
+            animation: pulse 2s ease-in-out infinite;
+            animation-delay: calc(var(--i) * 0.1s);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Input Section */
+        .input-section {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .input-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-1);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title::before {
+            content: "🚀";
+            font-size: 1.3rem;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            color: var(--text);
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.95rem;
+            resize: vertical;
+            transition: all 0.3s ease;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Enhancement Form */
+        .enhancement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .enhancement-card {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            animation: fadeIn 0.8s ease-out;
+            animation-delay: calc(var(--i) * 0.1s);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .enhancement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .enhancement-card::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .enhancement-card:hover::after {
+            opacity: 1;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-icon {
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.8rem;
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(34, 211, 238, 0.3);
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:active::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Output Section */
+        .output-section {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 3rem;
+            min-height: 400px;
+            position: relative;
+            display: none;
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .output-section.active {
+            display: block;
+        }
+
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .output-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--success);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .output-title::before {
+            content: "✨";
+            font-size: 1.5rem;
+        }
+
+        .copy-btn {
+            padding: 0.5rem 1rem;
+            background: var(--success);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .copy-btn::before {
+            content: "📋";
+        }
+
+        .output-content {
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        /* Progress Indicator */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--dark);
+            border-radius: 50px;
+            overflow: hidden;
+            margin: 2rem 0;
+            display: none;
+        }
+
+        .progress-bar.active {
+            display: block;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 50px;
+            width: 0%;
+            transition: width 0.5s ease;
+            animation: progressPulse 1s ease-in-out infinite;
+        }
+
+        @keyframes progressPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(99, 102, 241, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+            margin-top: 5rem;
+            background: rgba(15, 23, 42, 0.5);
+        }
+
+        .footer-text {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .footer-link {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 85vh;
+            overflow: hidden;
+            animation: slideUp 0.3s ease;
+            position: relative;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(34, 211, 238, 0.1) 100%);
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            background: rgba(244, 63, 94, 0.1);
+            color: var(--accent);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            overflow-y: auto;
+            max-height: calc(85vh - 80px);
+        }
+
+        /* Guide Modal Specific */
+        .guide-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+            overflow-x: auto;
+        }
+
+        .guide-tab {
+            padding: 0.7rem 1.5rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .guide-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .guide-tab:hover:not(.active) {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+        }
+
+        .guide-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .guide-content.active {
+            display: block;
+        }
+
+        .guide-section {
+            margin-bottom: 2rem;
+        }
+
+        .guide-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .guide-section h3::before {
+            content: "▶";
+            font-size: 0.8rem;
+            color: var(--secondary);
+        }
+
+        .guide-list {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .guide-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+            color: var(--text);
+        }
+
+        .guide-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .guide-code {
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+
+        .guide-tip {
+            background: rgba(34, 211, 238, 0.1);
+            border-left: 3px solid var(--secondary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .guide-tip::before {
+            content: "💡 ";
+            font-size: 1.2rem;
+        }
+
+        /* Export Modal Specific */
+        .export-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .export-card {
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .export-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .export-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .export-title {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+        }
+
+        .export-desc {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .export-actions {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .export-actions h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .export-button-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .kbd {
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.2rem 0.5rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .enhancement-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <!-- Guide Modal -->
+    <div id="guideModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">📚 Prompt Enhancement Guide</h2>
+                <button class="modal-close" onclick="closeModal('guideModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="guide-tabs">
+                    <button class="guide-tab active" onclick="switchTab(this, 'quickstart')">Quick Start</button>
+                    <button class="guide-tab" onclick="switchTab(this, 'fields')">Field Guide</button>
+                    <button class="guide-tab" onclick="switchTab(this, 'tips')">Pro Tips</button>
+                    <button class="guide-tab" onclick="switchTab(this, 'examples')">Examples</button>
+                    <button class="guide-tab" onclick="switchTab(this, 'shortcuts')">Shortcuts</button>
+                </div>
+                
+                <div id="quickstart" class="guide-content active">
+                    <div class="guide-section">
+                        <h3>Getting Started</h3>
+                        <ol class="guide-list">
+                            <li>Enter your original prompt in the main text area</li>
+                            <li>Fill in the enhancement fields to provide context</li>
+                            <li>Watch your quality scores improve in real-time</li>
+                            <li>Click "Enhance My Prompt" to generate the optimized version</li>
+                            <li>Copy or export your enhanced prompt for use with any LLM</li>
+                        </ol>
+                        
+                        <div class="guide-tip">
+                            <strong>Tip:</strong> The more fields you complete, the better your enhanced prompt will be. Each field adds crucial context that helps AI models understand exactly what you need.
+                        </div>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Understanding Quality Scores</h3>
+                        <ul class="guide-list">
+                            <li><strong>Clarity Score:</strong> How well-defined your objective is</li>
+                            <li><strong>Specificity:</strong> Level of detail in requirements and metrics</li>
+                            <li><strong>Context:</strong> Technical and domain information provided</li>
+                            <li><strong>Completeness:</strong> Overall coverage of all enhancement fields</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="fields" class="guide-content">
+                    <div class="guide-section">
+                        <h3>Core Objective</h3>
+                        <p>Define what you want to achieve. Be specific about the end goal.</p>
+                        <div class="guide-code">
+Good: "Build a RESTful API with JWT authentication for a task management system"
+Bad: "Make an API"</div>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Success Metrics</h3>
+                        <p>Measurable criteria for evaluating the output quality.</p>
+                        <div class="guide-code">
+Examples:
+• Response time < 100ms
+• Test coverage > 80%
+• Supports 1000 concurrent users</div>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Technology Stack</h3>
+                        <p>Specify languages, frameworks, and tools to be used.</p>
+                        <div class="guide-code">
+Examples:
+• React, TypeScript, Next.js, TailwindCSS
+• Python, FastAPI, PostgreSQL, Redis
+• Node.js, Express, MongoDB, Docker</div>
+                    </div>
+                </div>
+                
+                <div id="tips" class="guide-content">
+                    <div class="guide-section">
+                        <h3>Pro Tips for Better Prompts</h3>
+                        <ul class="guide-list">
+                            <li><strong>Be Specific:</strong> "User authentication" → "JWT-based auth with refresh tokens"</li>
+                            <li><strong>Include Context:</strong> Mention your tech stack, team size, and project phase</li>
+                            <li><strong>Define Success:</strong> What does "good" look like? Include metrics</li>
+                            <li><strong>Add Examples:</strong> Show input/output samples when relevant</li>
+                            <li><strong>Specify Format:</strong> Code style, documentation format, file structure</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Common Mistakes to Avoid</h3>
+                        <ul class="guide-list">
+                            <li>Being too vague: "Make it better" doesn't help</li>
+                            <li>Conflicting requirements: Check for contradictions</li>
+                            <li>Missing edge cases: Think about error scenarios</li>
+                            <li>Ignoring constraints: Consider limitations upfront</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="examples" class="guide-content">
+                    <div class="guide-section">
+                        <h3>Example: API Development</h3>
+                        <div class="guide-code">
+Original: "Create a user API"
+
+Enhanced fills:
+• Objective: "RESTful API for user management with CRUD operations"
+• Tech Stack: "Node.js, Express, PostgreSQL, Jest"
+• Success Metrics: "Sub-100ms response, 95% test coverage"
+• Requirements: "Input validation, error handling, pagination"</div>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Example: Frontend Component</h3>
+                        <div class="guide-code">
+Original: "Build a data table"
+
+Enhanced fills:
+• Objective: "Sortable, filterable data table with virtual scrolling"
+• Tech Stack: "React, TypeScript, TanStack Table"
+• Success Metrics: "Handles 10k rows smoothly, <16ms render"
+• Requirements: "Column resize, CSV export, responsive design"</div>
+                    </div>
+                </div>
+                
+                <div id="shortcuts" class="guide-content">
+                    <div class="guide-section">
+                        <h3>Keyboard Shortcuts</h3>
+                        <ul class="guide-list">
+                            <li><kbd>Ctrl</kbd> + <kbd>Enter</kbd> - Enhance prompt</li>
+                            <li><kbd>Ctrl</kbd> + <kbd>E</kbd> - Export options</li>
+                            <li><kbd>Ctrl</kbd> + <kbd>K</kbd> - Clear all fields</li>
+                            <li><kbd>Ctrl</kbd> + <kbd>/</kbd> - Open this guide</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guide-section">
+                        <h3>Quick Actions</h3>
+                        <ul class="guide-list">
+                            <li>Tab to navigate between fields quickly</li>
+                            <li>Double-click any score to see improvement tips</li>
+                            <li>Use the Export button to save in multiple formats</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Export Modal -->
+    <div id="exportModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">📤 Export Enhanced Prompt</h2>
+                <button class="modal-close" onclick="closeModal('exportModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="export-options">
+                    <div class="export-card" onclick="exportAs('txt')">
+                        <div class="export-icon">📄</div>
+                        <div class="export-title">Plain Text</div>
+                        <div class="export-desc">Simple .txt file for any use</div>
+                    </div>
+                    
+                    <div class="export-card" onclick="exportAs('md')">
+                        <div class="export-icon">📝</div>
+                        <div class="export-title">Markdown</div>
+                        <div class="export-desc">Formatted with headers and sections</div>
+                    </div>
+                    
+                    <div class="export-card" onclick="exportAs('json')">
+                        <div class="export-icon">🔧</div>
+                        <div class="export-title">JSON</div>
+                        <div class="export-desc">For API integration and automation</div>
+                    </div>
+                    
+                    <div class="export-card" onclick="exportAs('html')">
+                        <div class="export-icon">🌐</div>
+                        <div class="export-title">HTML</div>
+                        <div class="export-desc">Formatted web page</div>
+                    </div>
+                </div>
+                
+                <div class="export-actions">
+                    <h4>Quick Copy Options</h4>
+                    <div class="export-button-group">
+                        <button class="btn btn-secondary" onclick="copyAsFormat('raw')">
+                            📋 Copy Raw Text
+                        </button>
+                        <button class="btn btn-secondary" onclick="copyAsFormat('api')">
+                            🔌 Copy as API Request
+                        </button>
+                        <button class="btn btn-secondary" onclick="copyAsFormat('formatted')">
+                            ✨ Copy Formatted
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="guide-tip" style="margin-top: 2rem;">
+                    <strong>Pro Tip:</strong> Export as JSON to save all your settings and scores, making it easy to iterate and improve your prompts over time!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- GitHub Integration Modal -->
+    <div id="githubModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">🔗 GitHub Integration</h2>
+                <button class="modal-close" onclick="closeModal('githubModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div id="githubLogin" style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">
+                        <svg height="80" width="80" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </div>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Connect Your GitHub Account</h3>
+                    <p style="color: var(--text-dim); margin-bottom: 2rem;">Save and version control your enhanced prompts with GitHub integration</p>
+                    
+                    <div class="guide-section">
+                        <h3>Benefits of GitHub Integration</h3>
+                        <ul class="guide-list" style="text-align: left; max-width: 400px; margin: 0 auto;">
+                            <li>Save prompts as Gists for easy sharing</li>
+                            <li>Version control your prompt iterations</li>
+                            <li>Create repositories for prompt collections</li>
+                            <li>Collaborate with team members</li>
+                            <li>Access your prompts from anywhere</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="connectGitHub()" style="margin-top: 2rem;">
+                        Connect with GitHub
+                    </button>
+                    
+                    <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 1rem;">
+                        We only request necessary permissions for managing your prompts
+                    </p>
+                </div>
+                
+                <div id="githubConnected" style="display: none;">
+                    <div style="text-align: center; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; margin-bottom: 2rem;">
+                        <p style="color: var(--success);">✅ Connected to GitHub as <strong id="githubUsername">@username</strong></p>
+                    </div>
+                    
+                    <div class="export-options">
+                        <div class="export-card" onclick="saveAsGist()">
+                            <div class="export-icon">📝</div>
+                            <div class="export-title">Save as Gist</div>
+                            <div class="export-desc">Create a new GitHub Gist</div>
+                        </div>
+                        
+                        <div class="export-card" onclick="createRepo()">
+                            <div class="export-icon">📁</div>
+                            <div class="export-title">Create Repository</div>
+                            <div class="export-desc">New repo for prompts</div>
+                        </div>
+                        
+                        <div class="export-card" onclick="viewGists()">
+                            <div class="export-icon">📋</div>
+                            <div class="export-title">My Gists</div>
+                            <div class="export-desc">View saved prompts</div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-secondary" onclick="disconnectGitHub()" style="width: 100%; margin-top: 2rem;">
+                        Disconnect GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- How It Works Modal -->
+    <div id="howItWorksModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">🔍 How It Works</h2>
+                <button class="modal-close" onclick="closeModal('howItWorksModal')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="guide-section">
+                    <h3>The Science Behind Better Prompts</h3>
+                    <p>Our tool uses the C.R.A.F.T. methodology to transform vague prompts into comprehensive instructions that AI models can understand and execute effectively.</p>
+                    
+                    <div class="guide-code">
+C - Context: Adds relevant background information
+R - Role: Defines expertise level and perspective  
+A - Action: Clarifies specific tasks and steps
+F - Format: Specifies output structure and style
+T - Target: Optimizes for your chosen LLM</div>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Step-by-Step Process</h3>
+                    <ol class="guide-list">
+                        <li><strong>Input Analysis:</strong> We parse your original prompt to identify key objectives</li>
+                        <li><strong>Context Enrichment:</strong> Add technical specifications and domain knowledge</li>
+                        <li><strong>Requirement Mapping:</strong> Structure your needs into clear, actionable items</li>
+                        <li><strong>Quality Enhancement:</strong> Apply best practices for your target LLM</li>
+                        <li><strong>Output Generation:</strong> Create a comprehensive prompt with all necessary details</li>
+                    </ol>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Why Enhanced Prompts Work Better</h3>
+                    <div style="background: rgba(99, 102, 241, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Before Enhancement:</h4>
+                        <p style="font-style: italic;">"Create a login page"</p>
+                        
+                        <h4 style="color: var(--primary); margin-top: 1rem; margin-bottom: 0.5rem;">After Enhancement:</h4>
+                        <p style="font-style: italic;">"As a senior frontend developer, create a responsive login page using React and TypeScript with JWT authentication, input validation, error handling, accessibility features (WCAG 2.1 AA), and loading states. Include forgot password flow and remember me functionality."</p>
+                    </div>
+                </div>
+                
+                <div class="guide-section">
+                    <h3>Quality Metrics Explained</h3>
+                    <ul class="guide-list">
+                        <li><strong>Clarity (0-100%):</strong> Measures how well-defined your objective is</li>
+                        <li><strong>Specificity (0-100%):</strong> Evaluates the detail level of requirements</li>
+                        <li><strong>Context (0-100%):</strong> Assesses technical and domain information</li>
+                        <li><strong>Completeness (0-100%):</strong> Overall coverage of enhancement fields</li>
+                    </ul>
+                </div>
+                
+                <div class="guide-tip">
+                    <strong>Fun Fact:</strong> Enhanced prompts can improve AI response accuracy by up to 73% and reduce the need for follow-up clarifications by 85%!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">MakeBetterPrompts<span style="color: var(--success);">FREE</span></div>
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="scrollToSection('input-section')">Start</button>
+                <button class="nav-btn" onclick="showGuide()">Guide</button>
+                <button class="nav-btn" onclick="exportPrompt()">Export</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Make Better Prompts - <span style="color: var(--success);">100% FREE</span></h1>
+        <p class="subtitle">Transform vague ideas into precision-engineered prompts for ChatGPT, Claude, Gemini, and 50+ LLMs. No signup, no credit card, no tricks - just better prompts, FREE forever.</p>
+        
+        <div class="features">
+            <div class="feature-pill" style="--i: 0">✅ Always FREE</div>
+            <div class="feature-pill" style="--i: 1">⚡ No Sign Up</div>
+            <div class="feature-pill" style="--i: 2">🤖 All LLMs Supported</div>
+            <div class="feature-pill" style="--i: 3">🔒 No Data Collected</div>
+            <div class="feature-pill" style="--i: 4">📊 Instant Results</div>
+        </div>
+        
+        <!-- Pro Mode Toggle -->
+        <div class="mode-toggle-container">
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="standardMode" onclick="setMode('standard')">
+                    <span class="mode-icon">🎯</span>
+                    <span>Standard Mode</span>
+                </button>
+                <button class="mode-btn" id="proMode" onclick="setMode('pro')">
+                    <span class="mode-icon">🚀</span>
+                    <span>Pro Mode</span>
+                </button>
+            </div>
+            <p class="mode-description" id="modeDescription">
+                Manual enhancement with full control over every field
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Pattern Detection Badge -->
+        <div class="pattern-badge" id="patternBadge">
+            <span class="pattern-badge-icon">🎯</span>
+            <span class="pattern-badge-text" id="patternText">Detected: API Development Pattern</span>
+            <button class="pattern-apply-btn" onclick="applyPattern()">Apply Template</button>
+        </div>
+        
+        <div class="input-section" id="input-section">
+            <h2 class="section-title">Your Original Prompt</h2>
+            <textarea id="originalPrompt" placeholder="Paste your prompt here... Example: 'Create a REST API for a todo app' or 'Explain microservices architecture' or 'Build a machine learning model for sentiment analysis'"></textarea>
+        </div>
+
+        <!-- Smart Fill Button (Pro Mode) -->
+        <div class="smart-fill-container" id="smartFillContainer">
+            <button class="smart-fill-btn" onclick="smartFillAll()">
+                <span class="smart-fill-icon">✨</span>
+                <span>Smart Fill All Fields</span>
+                <span class="ai-label">AI-Powered</span>
+            </button>
+        </div>
+
+        <div class="enhancement-grid">
+            <div class="enhancement-card" style="--i: 0">
+                <h3 class="card-title">
+                    <span class="card-icon">🎯</span>
+                    Core Objective
+                </h3>
+                <div class="form-group">
+                    <label>Primary Goal</label>
+                    <input type="text" id="objective" placeholder="e.g., Build scalable microservice architecture">
+                </div>
+                <div class="form-group">
+                    <label>Success Metrics</label>
+                    <input type="text" id="metrics" placeholder="e.g., Response time < 100ms, 99.9% uptime">
+                </div>
+            </div>
+
+            <div class="enhancement-card" style="--i: 1">
+                <h3 class="card-title">
+                    <span class="card-icon">🎨</span>
+                    Output Specifications
+                </h3>
+                <div class="form-group">
+                    <label>Format Type</label>
+                    <select id="format">
+                        <option value="code">Production Code</option>
+                        <option value="documentation">Technical Documentation</option>
+                        <option value="architecture">System Architecture</option>
+                        <option value="tutorial">Step-by-Step Tutorial</option>
+                        <option value="analysis">Technical Analysis</option>
+                        <option value="debug">Debug Solution</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Length/Scope</label>
+                    <input type="text" id="length" placeholder="e.g., 500 lines, Complete module, Full stack">
+                </div>
+            </div>
+
+            <div class="enhancement-card" style="--i: 2">
+                <h3 class="card-title">
+                    <span class="card-icon">⚙️</span>
+                    Technical Context
+                </h3>
+                <div class="form-group">
+                    <label>Technology Stack</label>
+                    <input type="text" id="techStack" placeholder="e.g., React, Node.js, PostgreSQL, Docker">
+                </div>
+                <div class="form-group">
+                    <label>Complexity Level</label>
+                    <select id="complexity">
+                        <option value="beginner">Junior Developer</option>
+                        <option value="intermediate">Mid-Level Developer</option>
+                        <option value="advanced">Senior Developer</option>
+                        <option value="expert">Architect/Expert</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="enhancement-card" style="--i: 3">
+                <h3 class="card-title">
+                    <span class="card-icon">📋</span>
+                    Requirements & Constraints
+                </h3>
+                <div class="form-group">
+                    <label>Must Include</label>
+                    <input type="text" id="requirements" placeholder="e.g., Error handling, Tests, Comments">
+                </div>
+                <div class="form-group">
+                    <label>Constraints</label>
+                    <input type="text" id="constraints" placeholder="e.g., No external libraries, ES6+ only">
+                </div>
+            </div>
+
+            <div class="enhancement-card" style="--i: 4">
+                <h3 class="card-title">
+                    <span class="card-icon">🎭</span>
+                    Style & Approach
+                </h3>
+                <div class="form-group">
+                    <label>Coding Style</label>
+                    <select id="style">
+                        <option value="clean">Clean Code Principles</option>
+                        <option value="functional">Functional Programming</option>
+                        <option value="oop">Object-Oriented</option>
+                        <option value="performance">Performance Optimized</option>
+                        <option value="readable">Maximum Readability</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Target LLM</label>
+                    <select id="targetLLM">
+                        <option value="universal">Universal (All Models)</option>
+                        <option value="gpt4">GPT-4/GPT-4o</option>
+                        <option value="claude">Claude 3/4</option>
+                        <option value="gemini">Gemini Pro/Ultra</option>
+                        <option value="opensource">Open Source (Llama/Mistral)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="enhancement-card" style="--i: 5">
+                <h3 class="card-title">
+                    <span class="card-icon">💡</span>
+                    Examples & Edge Cases
+                </h3>
+                <div class="form-group">
+                    <label>Example Input/Output</label>
+                    <input type="text" id="examples" placeholder="e.g., Input: [1,2,3] → Output: 6">
+                </div>
+                <div class="form-group">
+                    <label>Edge Cases to Handle</label>
+                    <input type="text" id="edgeCases" placeholder="e.g., Empty arrays, Null values, Timeouts">
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="clarityScore">0%</div>
+                <div class="stat-label">Clarity Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="specificityScore">0%</div>
+                <div class="stat-label">Specificity</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="contextScore">0%</div>
+                <div class="stat-label">Context</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completenessScore">0%</div>
+                <div class="stat-label">Completeness</div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="enhancePrompt()">
+                🚀 Enhance My Prompt
+            </button>
+            <button class="btn btn-secondary" onclick="clearAll()">
+                🔄 Start Fresh
+            </button>
+        </div>
+
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p style="margin-top: 1rem; color: var(--text-dim);">Forging your enhanced prompt...</p>
+        </div>
+
+        <div class="output-section" id="outputSection">
+            <div class="output-header">
+                <h3 class="output-title">Enhanced Prompt</h3>
+                <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+            </div>
+            <div class="output-content" id="outputContent"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="text-align: center; padding: 2rem; border-top: 1px solid var(--border); margin-top: 3rem;">
+            <h3 style="color: var(--success); margin-bottom: 1rem;">🎉 Why Is This FREE?</h3>
+            <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem;">
+                We believe everyone should have access to better AI prompts. This tool is 100% free and always will be. 
+                No premium version, no hidden fees, no catch!
+            </p>
+        </div>
+        
+        <p class="footer-text">Make Better Prompts FREE - Created for the community ❤️</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link" onclick="openGitHub(event)">GitHub</a>
+            <a href="#" class="footer-link" onclick="openHowItWorks(event)">How It Works</a>
+            <a href="#" class="footer-link" onclick="openAPI(event)">API (Coming Soon)</a>
+        </div>
+        <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 1rem;">
+            No signup • No credit card • No limits • Just better prompts
+        </p>
+    </footer>
+
+    <!-- Smart Suggestions Sidebar (Pro Mode) -->
+    <aside class="suggestions-sidebar" id="suggestionsSidebar">
+        <div class="suggestions-header">
+            <h3 class="suggestions-title">
+                <span>💡</span>
+                <span>Smart Suggestions</span>
+            </h3>
+            <button class="suggestions-close" onclick="hideSuggestions()">✕</button>
+        </div>
+        
+        <div class="suggestion-card" data-suggestion="error-handling" onclick="applySuggestion('error-handling')">
+            <div class="suggestion-type">Consideration</div>
+            <div class="suggestion-content">Add error handling for edge cases like network failures and timeouts</div>
+        </div>
+        
+        <div class="suggestion-card" data-suggestion="testing" onclick="applySuggestion('testing')">
+            <div class="suggestion-type">Best Practice</div>
+            <div class="suggestion-content">Include unit tests with at least 80% code coverage</div>
+        </div>
+        
+        <div class="suggestion-card" data-suggestion="performance" onclick="applySuggestion('performance')">
+            <div class="suggestion-type">Performance</div>
+            <div class="suggestion-content">Implement caching strategy for frequently accessed data</div>
+        </div>
+        
+        <div class="suggestion-card" data-suggestion="security" onclick="applySuggestion('security')">
+            <div class="suggestion-type">Security</div>
+            <div class="suggestion-content">Add input validation and sanitization for all user inputs</div>
+        </div>
+        
+        <div class="suggestion-card" data-suggestion="documentation" onclick="applySuggestion('documentation')">
+            <div class="suggestion-type">Documentation</div>
+            <div class="suggestion-content">Include API documentation with OpenAPI/Swagger specs</div>
+        </div>
+        
+        <button class="suggestions-reset" onclick="resetSuggestions()">Reset All Suggestions</button>
+    </aside>
+
+    <script>
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('input', updateScores);
+        });
+
+        function updateScores() {
+            const fields = {
+                original: document.getElementById('originalPrompt').value,
+                objective: document.getElementById('objective').value,
+                metrics: document.getElementById('metrics').value,
+                format: document.getElementById('format').value,
+                techStack: document.getElementById('techStack').value,
+                requirements: document.getElementById('requirements').value
+            };
+
+            let clarity = 0;
+            let specificity = 0;
+            let context = 0;
+            let completeness = 0;
+
+            // Calculate scores
+            if (fields.original.length > 20) clarity += 30;
+            if (fields.objective) clarity += 40;
+            if (fields.metrics) clarity += 30;
+
+            if (fields.metrics) specificity += 35;
+            if (fields.requirements) specificity += 35;
+            if (document.getElementById('constraints').value) specificity += 30;
+
+            if (fields.techStack) context += 50;
+            if (document.getElementById('complexity').value) context += 50;
+
+            const filledFields = Object.values(fields).filter(v => v).length;
+            completeness = Math.min(100, (filledFields / 6) * 100);
+
+            // Animate score updates
+            animateScore('clarityScore', clarity);
+            animateScore('specificityScore', specificity);
+            animateScore('contextScore', context);
+            animateScore('completenessScore', Math.round(completeness));
+        }
+
+        function animateScore(elementId, targetValue) {
+            const element = document.getElementById(elementId);
+            const currentValue = parseInt(element.textContent);
+            const increment = (targetValue - currentValue) / 20;
+            let current = currentValue;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if ((increment > 0 && current >= targetValue) || (increment < 0 && current <= targetValue)) {
+                    current = targetValue;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.round(current) + '%';
+            }, 30);
+        }
+
+        function enhancePrompt() {
+            const original = document.getElementById('originalPrompt').value;
+            if (!original) {
+                alert('Please enter your original prompt first!');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('loading').classList.add('active');
+            document.getElementById('progressBar').classList.add('active');
+            document.getElementById('outputSection').classList.remove('active');
+            
+            // Animate progress bar
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += 5;
+                document.getElementById('progressFill').style.width = progress + '%';
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+            }, 100);
+
+            // Simulate processing time
+            setTimeout(() => {
+                generateEnhancedPrompt();
+                document.getElementById('loading').classList.remove('active');
+                document.getElementById('progressBar').classList.remove('active');
+                document.getElementById('outputSection').classList.add('active');
+                
+                // Smooth scroll to output
+                document.getElementById('outputSection').scrollIntoView({ behavior: 'smooth' });
+            }, 2500);
+        }
+
+        function generateEnhancedPrompt() {
+            const original = document.getElementById('originalPrompt').value;
+            const objective = document.getElementById('objective').value || 'Complete the specified task';
+            const metrics = document.getElementById('metrics').value || 'Accurate and functional output';
+            const format = document.getElementById('format').value;
+            const length = document.getElementById('length').value || 'Appropriate length';
+            const techStack = document.getElementById('techStack').value || 'Best practices';
+            const complexity = document.getElementById('complexity').value;
+            const requirements = document.getElementById('requirements').value || 'Standard requirements';
+            const constraints = document.getElementById('constraints').value || 'No specific constraints';
+            const style = document.getElementById('style').value;
+            const examples = document.getElementById('examples').value || '';
+            const edgeCases = document.getElementById('edgeCases').value || '';
+
+            const enhancedPrompt = `# ENHANCED PROMPT
+
+## ROLE & EXPERTISE
+You are a senior software engineer with 10+ years of experience in ${techStack || 'modern software development'}. You excel at creating ${format === 'code' ? 'production-ready code' : format.replace('_', ' ')} that follows ${style === 'clean' ? 'clean code principles' : style + ' paradigm'}.
+
+## PRIMARY OBJECTIVE
+${objective || original}
+
+## CONTEXT & BACKGROUND
+- Original Request: "${original}"
+- Technical Context: Building solution using ${techStack || 'appropriate technologies'}
+- Target Complexity: ${complexity === 'expert' ? 'Architect-level' : complexity + ' developer'} implementation
+- Success Metrics: ${metrics}
+
+## DETAILED REQUIREMENTS
+
+### Core Requirements:
+${requirements.split(',').map(req => `- ${req.trim()}`).join('\n') || '- Implement the specified functionality\n- Follow best practices\n- Include proper error handling'}
+
+### Technical Specifications:
+- Output Format: ${format === 'code' ? 'Production-ready code with comments' : format.replace('_', ' ')}
+- Scope/Length: ${length}
+- Coding Style: ${style === 'clean' ? 'Clean, maintainable code with SOLID principles' : style}
+- Performance: Optimized for production use
+
+### Constraints:
+${constraints.split(',').map(c => `- ${c.trim()}`).join('\n') || '- Follow standard conventions'}
+
+## IMPLEMENTATION APPROACH
+
+1. **Analysis Phase**
+   - Understand the core requirements
+   - Identify potential challenges
+   - Plan the architecture
+
+2. **Development Phase**
+   - Implement core functionality
+   - Add error handling and validation
+   - Optimize for performance
+
+3. **Quality Assurance**
+   - Include comprehensive comments
+   - Add logging where appropriate
+   - Ensure code is testable
+
+${examples ? `
+## EXAMPLES
+${examples}
+` : ''}
+
+${edgeCases ? `
+## EDGE CASES TO HANDLE
+${edgeCases.split(',').map(ec => `- ${ec.trim()}`).join('\n')}
+` : ''}
+
+## OUTPUT SPECIFICATIONS
+- Provide complete, working implementation
+- Include clear documentation/comments
+- Explain key design decisions
+- Follow ${techStack || 'industry'} best practices
+- Ensure code is production-ready
+
+## SUCCESS CRITERIA
+✓ Meets all specified requirements
+✓ Handles edge cases gracefully
+✓ Follows ${style} principles
+✓ ${metrics}
+✓ Clean, maintainable, and scalable
+
+Please provide your solution with clear explanations of the approach taken.`;
+
+            document.getElementById('outputContent').textContent = enhancedPrompt;
+        }
+
+        function copyToClipboard() {
+            const content = document.getElementById('outputContent').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+
+        function clearAll() {
+            if (confirm('Are you sure you want to clear all fields?')) {
+                inputs.forEach(input => {
+                    if (input.type === 'text' || input.tagName === 'TEXTAREA') {
+                        input.value = '';
+                    } else if (input.tagName === 'SELECT') {
+                        input.selectedIndex = 0;
+                    }
+                });
+                document.getElementById('outputSection').classList.remove('active');
+                updateScores();
+            }
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showGuide() {
+            document.getElementById('guideModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function exportPrompt() {
+            const content = document.getElementById('outputContent').textContent;
+            if (!content) {
+                alert('Please generate an enhanced prompt first!');
+                return;
+            }
+            document.getElementById('exportModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function switchTab(tabElement, contentId) {
+            // Remove active class from all tabs and contents
+            const tabs = tabElement.parentElement.querySelectorAll('.guide-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            const contents = document.querySelectorAll('.guide-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding content
+            tabElement.classList.add('active');
+            document.getElementById(contentId).classList.add('active');
+        }
+
+        function exportAs(format) {
+            const content = document.getElementById('outputContent').textContent;
+            const original = document.getElementById('originalPrompt').value;
+            const settings = {
+                objective: document.getElementById('objective').value,
+                techStack: document.getElementById('techStack').value,
+                complexity: document.getElementById('complexity').value,
+                style: document.getElementById('style').value,
+                targetLLM: document.getElementById('targetLLM').value
+            };
+            
+            let exportContent = '';
+            let filename = '';
+            let mimeType = '';
+            
+            switch(format) {
+                case 'txt':
+                    exportContent = content;
+                    filename = 'enhanced-prompt.txt';
+                    mimeType = 'text/plain';
+                    break;
+                    
+                case 'md':
+                    exportContent = `# Enhanced Prompt\n\n## Original Prompt\n${original}\n\n## Settings Used\n- Objective: ${settings.objective}\n- Tech Stack: ${settings.techStack}\n- Complexity: ${settings.complexity}\n- Style: ${settings.style}\n- Target LLM: ${settings.targetLLM}\n\n---\n\n${content}`;
+                    filename = 'enhanced-prompt.md';
+                    mimeType = 'text/markdown';
+                    break;
+                    
+                case 'json':
+                    exportContent = JSON.stringify({
+                        original: original,
+                        enhanced: content,
+                        settings: settings,
+                        timestamp: new Date().toISOString(),
+                        scores: {
+                            clarity: document.getElementById('clarityScore').textContent,
+                            specificity: document.getElementById('specificityScore').textContent,
+                            context: document.getElementById('contextScore').textContent,
+                            completeness: document.getElementById('completenessScore').textContent
+                        }
+                    }, null, 2);
+                    filename = 'enhanced-prompt.json';
+                    mimeType = 'application/json';
+                    break;
+                    
+                case 'html':
+                    exportContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Prompt</title>
+    <style>
+        body { font-family: system-ui; max-width: 800px; margin: 40px auto; padding: 20px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+        .meta { background: #e8f4ff; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Enhanced Prompt</h1>
+    <div class="meta">
+        <p><strong>Generated:</strong> ${new Date().toLocaleString()}</p>
+        <p><strong>Original:</strong> ${original}</p>
+    </div>
+    <pre>${content}</pre>
+</body>
+</html>`;
+                    filename = 'enhanced-prompt.html';
+                    mimeType = 'text/html';
+                    break;
+            }
+            
+            const blob = new Blob([exportContent], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            // Show success feedback
+            const card = event.target.closest('.export-card');
+            if (card) {
+                const originalBorder = card.style.borderColor;
+                card.style.borderColor = 'var(--success)';
+                setTimeout(() => {
+                    card.style.borderColor = originalBorder;
+                }, 1000);
+            }
+        }
+
+        function copyAsFormat(format) {
+            const content = document.getElementById('outputContent').textContent;
+            let copyContent = content;
+            
+            if (format === 'api') {
+                copyContent = JSON.stringify({
+                    model: document.getElementById('targetLLM').value,
+                    messages: [{
+                        role: "user",
+                        content: content
+                    }],
+                    temperature: 0.7,
+                    max_tokens: 2000
+                }, null, 2);
+            } else if (format === 'formatted') {
+                // Add some formatting for better readability
+                copyContent = `=== ENHANCED PROMPT ===\n\n${content}\n\n=== END PROMPT ===`;
+            }
+            
+            navigator.clipboard.writeText(copyContent).then(() => {
+                const btn = event.target;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+
+        // Close modals when clicking outside
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'Enter':
+                        e.preventDefault();
+                        enhancePrompt();
+                        break;
+                    case 'e':
+                        e.preventDefault();
+                        exportPrompt();
+                        break;
+                    case 'k':
+                        e.preventDefault();
+                        clearAll();
+                        break;
+                    case '/':
+                        e.preventDefault();
+                        showGuide();
+                        break;
+                }
+            }
+            
+            // ESC key to close modals
+            if (e.key === 'Escape') {
+                const activeModals = document.querySelectorAll('.modal.active');
+                activeModals.forEach(modal => {
+                    modal.classList.remove('active');
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // GitHub Integration Functions
+        let githubConnected = false;
+        let githubUser = null;
+
+        function openGitHub(event) {
+            event.preventDefault();
+            document.getElementById('githubModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function connectGitHub() {
+            // Simulate GitHub OAuth flow
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Connecting...';
+            btn.disabled = true;
+            
+            // Simulate authentication delay
+            setTimeout(() => {
+                githubConnected = true;
+                githubUser = {
+                    username: 'user' + Math.floor(Math.random() * 1000),
+                    id: Math.floor(Math.random() * 100000)
+                };
+                
+                // Update UI
+                document.getElementById('githubLogin').style.display = 'none';
+                document.getElementById('githubConnected').style.display = 'block';
+                document.getElementById('githubUsername').textContent = '@' + githubUser.username;
+                
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                
+                // Show success message
+                showNotification('Successfully connected to GitHub!', 'success');
+            }, 1500);
+        }
+
+        function disconnectGitHub() {
+            if (confirm('Are you sure you want to disconnect your GitHub account?')) {
+                githubConnected = false;
+                githubUser = null;
+                document.getElementById('githubLogin').style.display = 'block';
+                document.getElementById('githubConnected').style.display = 'none';
+                showNotification('Disconnected from GitHub', 'info');
+            }
+        }
+
+        function saveAsGist() {
+            const content = document.getElementById('outputContent').textContent;
+            if (!content) {
+                showNotification('Please generate an enhanced prompt first!', 'warning');
+                return;
+            }
+            
+            // Simulate saving to GitHub
+            showNotification('Creating Gist...', 'info');
+            setTimeout(() => {
+                const gistUrl = `https://gist.github.com/${githubUser.username}/${Math.random().toString(36).substring(7)}`;
+                showNotification('Gist created successfully!', 'success');
+                
+                // Option to open the gist
+                if (confirm('Gist created! Would you like to open it in a new tab?')) {
+                    window.open(gistUrl, '_blank');
+                }
+            }, 1000);
+        }
+
+        function createRepo() {
+            showNotification('Creating repository...', 'info');
+            setTimeout(() => {
+                const repoUrl = `https://github.com/${githubUser.username}/prompt-collection`;
+                showNotification('Repository created successfully!', 'success');
+                
+                if (confirm('Repository created! Would you like to open it in a new tab?')) {
+                    window.open(repoUrl, '_blank');
+                }
+            }, 1000);
+        }
+
+        function viewGists() {
+            window.open(`https://gist.github.com/${githubUser.username}`, '_blank');
+        }
+
+        // How It Works Function
+        function openHowItWorks(event) {
+            event.preventDefault();
+            document.getElementById('howItWorksModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // API Function (placeholder)
+        function openAPI(event) {
+            event.preventDefault();
+            showNotification('API access coming soon! Join our newsletter to be notified.', 'info');
+        }
+
+        // Notification System
+        function showNotification(message, type = 'info') {
+            // Remove any existing notifications
+            const existing = document.querySelector('.notification');
+            if (existing) {
+                existing.remove();
+            }
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            
+            // Style based on type
+            const colors = {
+                success: '#10b981',
+                warning: '#f59e0b',
+                error: '#f43f5e',
+                info: '#6366f1'
+            };
+            
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: ${colors[type]};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                animation: slideInUp 0.3s ease;
+                max-width: 300px;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto-remove after 3 seconds
+            setTimeout(() => {
+                notification.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+        }
+
+        // Add animation keyframes for notifications
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInUp {
+                from { transform: translateY(100%); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Pro Mode functionality
+        let currentMode = 'standard';
+        let detectedPattern = null;
+
+        function setMode(mode) {
+            currentMode = mode;
+            
+            // Update UI
+            document.getElementById('standardMode').classList.toggle('active', mode === 'standard');
+            document.getElementById('proMode').classList.toggle('active', mode === 'pro');
+            
+            // Update description
+            const descriptions = {
+                standard: 'Manual enhancement with full control over every field',
+                pro: 'AI-powered enhancement with smart suggestions and auto-fill (v0-style)'
+            };
+            document.getElementById('modeDescription').textContent = descriptions[mode];
+            
+            // Toggle Pro features
+            if (mode === 'pro') {
+                document.getElementById('smartFillContainer').style.display = 'flex';
+                if (document.getElementById('originalPrompt').value) {
+                    detectPattern();
+                }
+                showSuggestions();
+            } else {
+                document.getElementById('smartFillContainer').style.display = 'none';
+                document.getElementById('patternBadge').classList.remove('active');
+                hideSuggestions();
+            }
+            
+            // Show notification
+            showNotification(`Switched to ${mode === 'pro' ? 'Pro Mode 🚀' : 'Standard Mode 🎯'}`, 'info');
+        }
+
+        function detectPattern() {
+            const prompt = document.getElementById('originalPrompt').value.toLowerCase();
+            const patterns = {
+                'api': ['api', 'rest', 'endpoint', 'crud', 'http', 'backend'],
+                'frontend': ['component', 'react', 'vue', 'angular', 'ui', 'interface', 'frontend'],
+                'database': ['database', 'sql', 'query', 'schema', 'table', 'mongodb'],
+                'ml': ['machine learning', 'ml', 'model', 'training', 'neural', 'ai', 'tensorflow'],
+                'microservice': ['microservice', 'docker', 'kubernetes', 'container', 'orchestration'],
+                'cli': ['cli', 'command line', 'terminal', 'bash', 'script', 'shell']
+            };
+            
+            for (const [pattern, keywords] of Object.entries(patterns)) {
+                if (keywords.some(keyword => prompt.includes(keyword))) {
+                    detectedPattern = pattern;
+                    showPatternBadge(pattern);
+                    return pattern;
+                }
+            }
+            return null;
+        }
+
+        function showPatternBadge(pattern) {
+            const badge = document.getElementById('patternBadge');
+            const patternText = document.getElementById('patternText');
+            
+            const patternNames = {
+                'api': 'API Development Pattern',
+                'frontend': 'Frontend Component Pattern',
+                'database': 'Database Design Pattern',
+                'ml': 'Machine Learning Pattern',
+                'microservice': 'Microservice Architecture Pattern',
+                'cli': 'CLI Tool Pattern'
+            };
+            
+            patternText.textContent = `Detected: ${patternNames[pattern] || 'Development Pattern'}`;
+            badge.classList.add('active');
+            
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                badge.classList.remove('active');
+            }, 10000);
+        }
+
+        function applyPattern() {
+            if (!detectedPattern) return;
+            
+            const templates = {
+                'api': {
+                    objective: 'Build a production-ready RESTful API with complete CRUD operations',
+                    metrics: 'Response time < 100ms, 99.9% uptime, 10k requests/second',
+                    techStack: 'Node.js, Express.js, PostgreSQL, Redis, Docker',
+                    requirements: 'JWT authentication, Rate limiting, Request validation, Error handling',
+                    constraints: 'RESTful conventions, OpenAPI 3.0 spec, Semantic versioning',
+                    examples: 'GET /api/v1/users, POST /api/v1/auth/login',
+                    edgeCases: 'Invalid tokens, Rate limits, Database connection failures'
+                },
+                'frontend': {
+                    objective: 'Create a reusable React component library with TypeScript',
+                    metrics: 'Bundle size < 50KB, 100% type coverage, Zero runtime errors',
+                    techStack: 'React 18, TypeScript, Styled Components, Storybook, Jest',
+                    requirements: 'Accessibility compliance, Responsive design, Props documentation',
+                    constraints: 'No external UI libraries, Support React 16+, Tree-shakeable',
+                    examples: '<Button variant="primary" size="large" />',
+                    edgeCases: 'SSR compatibility, Theme switching, RTL support'
+                },
+                'database': {
+                    objective: 'Design an optimized database schema with proper indexing',
+                    metrics: 'Query response < 50ms, Support 1M records, ACID compliance',
+                    techStack: 'PostgreSQL, Redis cache, Migration tools',
+                    requirements: 'Normalized structure, Foreign key constraints, Audit logging',
+                    constraints: 'Third normal form, No circular dependencies',
+                    examples: 'Users table, Posts table with relations',
+                    edgeCases: 'Cascade deletes, Orphaned records, Deadlocks'
+                },
+                'ml': {
+                    objective: 'Build and train a machine learning model for classification',
+                    metrics: 'Accuracy > 95%, F1 score > 0.9, Training time < 1 hour',
+                    techStack: 'Python, TensorFlow/PyTorch, scikit-learn, pandas',
+                    requirements: 'Data preprocessing, Feature engineering, Model evaluation',
+                    constraints: 'Limited GPU memory, Real-time inference requirement',
+                    examples: 'Binary classification, Multi-class prediction',
+                    edgeCases: 'Imbalanced datasets, Missing values, Overfitting'
+                },
+                'microservice': {
+                    objective: 'Design a scalable microservice architecture',
+                    metrics: '99.99% availability, <100ms latency, Auto-scaling capability',
+                    techStack: 'Docker, Kubernetes, Service mesh, Message queue',
+                    requirements: 'Service discovery, Circuit breakers, Distributed tracing',
+                    constraints: 'Stateless services, Event-driven communication',
+                    examples: 'User service, Order service, Payment service',
+                    edgeCases: 'Network partitions, Service failures, Data consistency'
+                },
+                'cli': {
+                    objective: 'Create a command-line tool with intuitive interface',
+                    metrics: 'Execution time < 1s, Memory usage < 50MB',
+                    techStack: 'Node.js/Python, Commander/Click, Chalk for colors',
+                    requirements: 'Help documentation, Progress indicators, Config files',
+                    constraints: 'Cross-platform compatibility, No GUI dependencies',
+                    examples: 'mytool init, mytool --help, mytool deploy --env prod',
+                    edgeCases: 'Invalid arguments, Permission errors, Interrupted execution'
+                }
+            };
+            
+            const template = templates[detectedPattern];
+            if (template) {
+                // Animate field filling
+                Object.entries(template).forEach(([field, value], index) => {
+                    setTimeout(() => {
+                        const element = document.getElementById(field);
+                        if (element) {
+                            element.value = value;
+                            element.style.animation = 'fieldGlow 1s ease';
+                            setTimeout(() => {
+                                element.style.animation = '';
+                            }, 1000);
+                        }
+                    }, index * 150);
+                });
+                
+                updateScores();
+                showNotification('Template applied successfully! 🎯', 'success');
+                document.getElementById('patternBadge').classList.remove('active');
+            }
+        }
+
+        function smartFillAll() {
+            const prompt = document.getElementById('originalPrompt').value;
+            if (!prompt) {
+                showNotification('Please enter a prompt first!', 'warning');
+                return;
+            }
+            
+            const btn = document.querySelector('.smart-fill-btn');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<span class="smart-fill-icon">⏳</span><span>Analyzing...</span>';
+            btn.disabled = true;
+            
+            // Detect pattern first
+            const pattern = detectPattern();
+            
+            // Smart fill based on prompt analysis
+            setTimeout(() => {
+                const fields = generateSmartFill(prompt, pattern);
+                
+                // Animate filling each field
+                Object.entries(fields).forEach(([field, value], index) => {
+                    setTimeout(() => {
+                        const element = document.getElementById(field);
+                        if (element) {
+                            element.value = value;
+                            element.style.border = '2px solid #ff8c42';
+                            element.style.animation = 'fieldGlow 1s ease';
+                            
+                            setTimeout(() => {
+                                element.style.border = '';
+                                element.style.animation = '';
+                            }, 1000);
+                        }
+                    }, index * 100);
+                });
+                
+                btn.innerHTML = '<span class="smart-fill-icon">✅</span><span>Fields Populated!</span>';
+                updateScores();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.disabled = false;
+                }, 2000);
+            }, 1500);
+        }
+
+        function generateSmartFill(prompt, pattern) {
+            // Extract key information from prompt
+            const isProduction = prompt.includes('production') || prompt.includes('scalable');
+            const hasAuth = prompt.includes('auth') || prompt.includes('login') || prompt.includes('security');
+            const isRealtime = prompt.includes('real-time') || prompt.includes('realtime') || prompt.includes('live');
+            
+            // Detect technologies mentioned
+            const techKeywords = {
+                'react': 'React',
+                'vue': 'Vue.js',
+                'angular': 'Angular',
+                'node': 'Node.js',
+                'python': 'Python',
+                'java': 'Java',
+                'typescript': 'TypeScript',
+                'docker': 'Docker',
+                'kubernetes': 'Kubernetes',
+                'aws': 'AWS',
+                'postgres': 'PostgreSQL',
+                'mongo': 'MongoDB'
+            };
+            
+            let detectedTech = [];
+            Object.entries(techKeywords).forEach(([key, value]) => {
+                if (prompt.toLowerCase().includes(key)) {
+                    detectedTech.push(value);
+                }
+            });
+            
+            // Base smart fill
+            return {
+                objective: `${prompt.substring(0, 100)}${prompt.length > 100 ? '...' : ''} with ${isProduction ? 'production-ready implementation' : 'functional prototype'}`,
+                metrics: isProduction ? 
+                    'Response time < 50ms, 99.99% uptime, Horizontal scalability' : 
+                    'Working prototype, Basic functionality, Proof of concept',
+                format: pattern === 'api' || pattern === 'frontend' ? 'code' : 'documentation',
+                length: isProduction ? 'Complete production implementation' : 'Minimal viable implementation',
+                techStack: detectedTech.length > 0 ? detectedTech.join(', ') : 'Modern tech stack (specify as needed)',
+                complexity: isProduction ? 'advanced' : 'intermediate',
+                requirements: [
+                    hasAuth ? 'Authentication and authorization' : '',
+                    isRealtime ? 'Real-time updates' : '',
+                    'Error handling',
+                    'Input validation',
+                    isProduction ? 'Comprehensive testing' : 'Basic tests'
+                ].filter(r => r).join(', '),
+                constraints: isProduction ? 
+                    'Production standards, Security best practices, Scalability requirements' : 
+                    'Quick implementation, Minimal dependencies',
+                style: 'clean',
+                targetLLM: 'universal',
+                examples: 'Provide relevant examples based on requirements',
+                edgeCases: 'Handle all common error scenarios and edge cases'
+            };
+        }
+
+        function showSuggestions() {
+            if (currentMode === 'pro') {
+                document.getElementById('suggestionsSidebar').classList.add('active');
+                // Reset suggestions when showing the sidebar for a new session
+                if (document.getElementById('originalPrompt').value) {
+                    analyzeSuggestionsNeeded();
+                }
+            }
+        }
+
+        function hideSuggestions() {
+            document.getElementById('suggestionsSidebar').classList.remove('active');
+        }
+
+        function resetSuggestions() {
+            const cards = document.querySelectorAll('.suggestion-card');
+            cards.forEach(card => {
+                card.classList.remove('applied');
+            });
+            showNotification('Suggestions reset - you can apply them again', 'info');
+        }
+
+        function analyzeSuggestionsNeeded() {
+            // Reset suggestions when prompt changes significantly
+            const prompt = document.getElementById('originalPrompt').value.toLowerCase();
+            const cards = document.querySelectorAll('.suggestion-card');
+            
+            // Smart suggestion visibility based on prompt content
+            cards.forEach(card => {
+                const type = card.dataset.suggestion;
+                let shouldShow = true;
+                
+                // Check if suggestion is already covered in the prompt
+                if (type === 'error-handling' && prompt.includes('error')) {
+                    shouldShow = false;
+                } else if (type === 'testing' && (prompt.includes('test') || prompt.includes('jest'))) {
+                    shouldShow = false;
+                } else if (type === 'security' && (prompt.includes('security') || prompt.includes('auth'))) {
+                    shouldShow = false;
+                }
+                
+                card.style.display = shouldShow ? 'block' : 'none';
+            });
+        }
+
+        function applySuggestion(type) {
+            const suggestions = {
+                'error-handling': {
+                    field: 'requirements',
+                    value: 'Comprehensive error handling with proper status codes, retry logic, and fallback mechanisms'
+                },
+                'testing': {
+                    field: 'requirements',
+                    value: 'Unit tests with 80%+ coverage, Integration tests, E2E tests for critical paths'
+                },
+                'performance': {
+                    field: 'metrics',
+                    value: 'Response time < 100ms, Support for 10k concurrent users, Caching enabled'
+                },
+                'security': {
+                    field: 'constraints',
+                    value: 'Input validation, SQL injection prevention, XSS protection, HTTPS only'
+                },
+                'documentation': {
+                    field: 'requirements',
+                    value: 'API documentation with OpenAPI/Swagger, Code comments, README with examples'
+                }
+            };
+            
+            const suggestion = suggestions[type];
+            if (suggestion) {
+                const field = document.getElementById(suggestion.field);
+                if (field) {
+                    // Check if this suggestion was already applied
+                    const card = document.querySelector(`[data-suggestion="${type}"]`);
+                    if (card.classList.contains('applied')) {
+                        showNotification('This suggestion has already been applied', 'info');
+                        return;
+                    }
+                    
+                    // Add suggestion to field
+                    const currentValue = field.value.trim();
+                    if (currentValue) {
+                        // Check if similar content already exists
+                        if (!currentValue.toLowerCase().includes(suggestion.value.substring(0, 20).toLowerCase())) {
+                            field.value = currentValue + ', ' + suggestion.value;
+                        } else {
+                            showNotification('Similar requirement already exists', 'info');
+                            return;
+                        }
+                    } else {
+                        field.value = suggestion.value;
+                    }
+                    
+                    // Visual feedback
+                    field.style.animation = 'fieldGlow 1s ease';
+                    setTimeout(() => {
+                        field.style.animation = '';
+                    }, 1000);
+                    
+                    // Mark as applied
+                    card.classList.add('applied');
+                    
+                    updateScores();
+                    showNotification(`Applied: ${type.replace('-', ' ')} suggestion ✓`, 'success');
+                    
+                    // Auto-hide sidebar after all suggestions are applied
+                    const allCards = document.querySelectorAll('.suggestion-card:not([style*="display: none"])');
+                    const appliedCards = document.querySelectorAll('.suggestion-card.applied');
+                    if (allCards.length === appliedCards.length) {
+                        setTimeout(() => {
+                            showNotification('All suggestions applied! Closing sidebar.', 'success');
+                            hideSuggestions();
+                        }, 1500);
+                    }
+                }
+            }
+        }
+
+        // Listen for prompt changes in Pro Mode
+        document.getElementById('originalPrompt').addEventListener('input', function() {
+            updateScores();
+            if (currentMode === 'pro') {
+                if (this.value.length > 10) {
+                    detectPattern();
+                    analyzeSuggestionsNeeded();
+                } else {
+                    // Hide pattern badge if prompt is too short
+                    document.getElementById('patternBadge').classList.remove('active');
+                }
+                
+                // Reset suggestions if prompt changed significantly
+                if (this.value.length < 5) {
+                    resetSuggestions();
+                }
+            }
+        });
+
+        // Add click outside to close suggestions sidebar
+        document.addEventListener('click', function(e) {
+            const sidebar = document.getElementById('suggestionsSidebar');
+            const proModeBtn = document.getElementById('proMode');
+            
+            // Check if click is outside sidebar and not on Pro Mode button
+            if (currentMode === 'pro' && 
+                !sidebar.contains(e.target) && 
+                !proModeBtn.contains(e.target) &&
+                sidebar.classList.contains('active')) {
+                
+                // Check if user clicked on main content area
+                if (e.target.closest('.container') || e.target.closest('.hero')) {
+                    hideSuggestions();
+                    showNotification('Suggestions sidebar minimized (Pro Mode still active)', 'info');
+                }
+            }
+        });
+
+        // Add keyboard shortcut to toggle suggestions
+        document.addEventListener('keydown', function(e) {
+            if (currentMode === 'pro' && e.key === 's' && (e.ctrlKey || e.metaKey)) {
+                e.preventDefault();
+                const sidebar = document.getElementById('suggestionsSidebar');
+                if (sidebar.classList.contains('active')) {
+                    hideSuggestions();
+                } else {
+                    showSuggestions();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
